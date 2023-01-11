@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.rosh'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.testng', name: 'testng', version: '7.6.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.7.0'
+}
+
+test {
+    useTestNG()
+}
